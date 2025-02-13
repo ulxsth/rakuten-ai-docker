@@ -3,7 +3,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 app = Flask(__name__)
 
-model_name = "RakutenAI-2.0-mini-instruct"
+model_name = "Rakuten/RakutenAI-2.0-mini-instruct"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
